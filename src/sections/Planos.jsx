@@ -10,7 +10,7 @@ function Planos(){
                     <CardPlano
                         titulo="Basic"
                         descricao="Ideal for beginners"
-                        precocheio="$287,90"
+                        precocheio="$244,27"
                         preco="$187,90"
                         beneficios={[
                             "Personalized training",
@@ -25,7 +25,7 @@ function Planos(){
                     <CardPlano
                         titulo="Semiannual"
                         descricao="Total focus on body and mental transformation"
-                        precocheio="$287,90"
+                        precocheio="$894,01"
                         preco="$687,70"
                         beneficios={[
                             "Personalized training",
@@ -40,7 +40,7 @@ function Planos(){
                     <CardPlano
                         titulo="Quarterly"
                         descricao="Ideal to get started"
-                        precocheio="$287,90"
+                        precocheio="$511,55"
                         preco="$393,50"
                         beneficios={[
                             "Personalized workout and meal plan",

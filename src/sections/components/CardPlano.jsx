@@ -11,7 +11,7 @@ function CardPlano({ titulo, descricao, preco, precocheio, beneficios, observaca
             <p className={style.pricetwo}>{precocheio}</p>
             <div className={style.desconto}>
                 <p className={style.price}>{preco}</p>
-                <p className={style.percent}>-20%</p>
+                <p className={style.percent}>-30%</p>
             </div>
 
             {observacao && <p className={style.obs}>{observacao}</p>}
