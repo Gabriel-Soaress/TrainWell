@@ -42,6 +42,8 @@
     width: 22vw;
     flex-direction: column;
     transition: 1s;
+    box-sizing: border-box;
+    word-wrap: break-word;
 }
 
 .cardplano:hover{
@@ -94,6 +96,7 @@
     display: flex;
     align-items: baseline;
     gap: 1vw;
+    flex-wrap: wrap;
 }
 
 .beneficio{
@@ -133,7 +136,8 @@
     font-size: 120%;
     font-weight: 600;
     transition: 1s;
-
+    text-align: center;
+    word-wrap: break-word;
 }
 
 .buttonget:hover{
@@ -146,20 +150,26 @@
 
 /*============================================*/
 
+/* Media Query para Tablets */
+@media (max-width: 1100px) and (min-width: 901px) {
+    .cardplano {
+        width: 28vw; /* Aumentado para evitar que textos vazem em tablets */
+        padding: 4vw;
+    }
+}
+
 @media (max-width: 900px){
     .contain{
         height: fit-content;
         padding-bottom: 50vw;
-
     }
 
     .cardplano{
         display: flex;
-        width: 60vw;
+        width: 82vw; /* Ajustado para compensar o box-sizing: border-box */
         flex-direction: column;
         transition: 1s;
         padding: 6vw;
-
     }
 
     .planos{

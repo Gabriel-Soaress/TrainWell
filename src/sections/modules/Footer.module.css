@@ -62,10 +62,9 @@
 
 @media (max-width: 900px){
     .contain{
-        margin-top: -35vw;
-        height: 50vh;
-        background-position-x: -16vw;
-
+        margin-top: -15vw; /* Reduzido de -35vw para evitar que o footer suba muito e deixe espaço embaixo */
+        height: 60vh;      /* Aumentado levemente para preencher mais a tela */
+        background-position: center bottom; /* Centraliza melhor a imagem do footer */
     }
 
     .content{
@@ -84,7 +83,7 @@
         justify-content: center;
         text-align: left;
         width: 30%;
-        font-size: 105%;
+        font-size: 135%; /* Aumentado de 105% para 135% para melhor legibilidade */
         margin-left: 0;
     }
 

@@ -2,6 +2,7 @@
     position: relative; /* Pai precisa ser relativo */
     display: flex;
     align-items: center;
+    justify-content: flex-end; /* Empurra o conteúdo para a direita de forma segura */
     background-color: #F2F2F2;
     width: 35vw;
     height: 20vw;
@@ -75,9 +76,11 @@
     font-size: 2.5rem;          /* Tamanho grande para o cargo */
     font-weight: bold;
     text-transform: uppercase;
-    max-width: 50%;           /* Impede que o texto empurre a foto */
+    max-width: 55%;           /* Impede que o texto empurre a foto */
     line-height: 1.1;
-    margin-left: 18vw;
+    margin-left: 0;           /* Removido vw rígido que vazava o card */
+    text-align: right;
+    padding-right: 5%;
 }
 
 
@@ -93,7 +96,9 @@
 
     .cargo {
         font-size: 1.5rem; /* Diminui um pouco a fonte para caber */
-        margin-left: 18vh;
+        margin-left: 0;    /* Removido vh incorreto que vazava o card */
+        text-align: right;
+        padding-right: 5%;
     }
 
     .foto {

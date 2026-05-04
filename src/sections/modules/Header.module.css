@@ -123,6 +123,7 @@ img{
     position: relative;
     left: -45vw;           /* posição inicial */
     opacity: 0;
+    z-index: 2;            /* Garante que o texto fique acima da imagem em todas as telas */
 
     animation: slideInLeft 1.2s ease-out forwards;
 }
@@ -214,6 +215,20 @@ img{
 
 .sidebar{
     display: none;
+}
+
+/* Ajustes Específicos para Tablet (evita texto colidindo com a imagem e alinhamento ruim) */
+@media (max-width: 1100px) and (min-width: 501px) {
+    .fundoimg {
+        width: 55%; /* Dá mais espaço para a imagem no tablet */
+        background-position: center right; /* Evita que a pessoa na foto seja cortada no meio */
+    }
+    .partone, .partwo {
+        font-size: 420%; /* Reduz a fonte levemente para não invadir o espaço da foto */
+    }
+    .write {
+        width: 85%;
+    }
 }
 
 @media (max-width: 500px) {

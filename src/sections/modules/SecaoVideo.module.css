@@ -65,7 +65,6 @@
 
     .TituloVideo {
         font-size: 40px; /* Reduz o título para não forçar a largura */
-        word-wrap: break-word; /* Força a quebra de palavras longas */
     }
 
     .Subtitulo {
